@@ -1,0 +1,246 @@
+.glut-screen {
+  padding-bottom: 40px;
+}
+
+.glut-subtitle {
+  font-size: 14px;
+  color: #6a6050;
+  margin: 8px 16px 14px;
+}
+
+/* Risk Card */
+.risk-card {
+  background: #fff;
+  border: 1.5px solid #e0dbd0;
+  border-radius: 16px;
+  margin: 0 16px 12px;
+  padding: 16px;
+}
+
+.risk-selector {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.risk-btn {
+  flex: 1;
+  padding: 11px 4px;
+  border-radius: 10px;
+  border: 1.5px solid #e0dbd0;
+  background: #f5f3ee;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  color: #6a6050;
+  transition: all 0.18s;
+}
+
+.risk-btn:active { transform: scale(0.96); }
+
+.risk-btn--active-low {
+  background: #e8f5e8;
+  border-color: #2d6a2d;
+  color: #1e4d1e;
+}
+
+.risk-btn--active-rising {
+  background: #fef3c7;
+  border-color: #d97706;
+  color: #92400e;
+}
+
+.risk-btn--active-high {
+  background: #fee2e2;
+  border-color: #dc2626;
+  color: #7f1d1d;
+}
+
+.risk-reasons__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 6px;
+}
+
+.risk-reasons__item {
+  font-size: 13.5px;
+  color: #4a4035;
+  margin: 3px 0;
+  line-height: 1.45;
+}
+
+/* Impact card */
+.impact-card {
+  background: #fef9ec;
+  border: 1.5px solid #f0d060;
+  border-radius: 14px;
+  margin: 0 16px 12px;
+  padding: 14px 16px;
+}
+
+.impact-card__title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #6b4c00;
+  margin: 0 0 5px;
+}
+
+.impact-card__body {
+  font-size: 13.5px;
+  color: #7a5c10;
+  margin: 0 0 8px;
+  line-height: 1.45;
+}
+
+.impact-card__link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #6b4c00;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-family: inherit;
+  transition: opacity 0.15s;
+}
+
+.impact-card__link:active { opacity: 0.6; }
+
+/* Chart */
+.chart-card {
+  background: #fff;
+  border: 1.5px dashed #d8d0c4;
+  border-radius: 14px;
+  margin: 0 16px 16px;
+  padding: 14px 16px 10px;
+}
+
+.chart-card__title {
+  font-size: 13px;
+  color: #6a6050;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+.arrivals-chart {
+  display: block;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.legend-item {
+  font-size: 12px;
+  color: #6a6050;
+}
+
+.legend-item--green { color: #2d6a2d; font-weight: 600; }
+.legend-item--dashed { color: #b0a898; }
+
+/* Pool section */
+.pool-section {
+  padding: 0 16px;
+}
+
+.pool-lot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 1.5px solid #e0dbd0;
+  border-radius: 12px;
+  padding: 13px 14px;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+
+.pool-lot__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pool-lot__name {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.pool-lot__meta {
+  font-size: 13px;
+  color: #6a6050;
+}
+
+.pool-summary {
+  font-size: 13px;
+  color: #6a6050;
+  margin-top: 6px;
+  line-height: 1.45;
+}
+
+.btn-contact {
+  padding: 9px 16px;
+  border: 1.5px solid #2d6a2d;
+  border-radius: 9px;
+  background: #fff;
+  color: #2d6a2d;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.btn-contact:active { background: #f0f8f0; }
+
+/* Alert area */
+.alert-area {
+  margin: 20px 16px 0;
+  text-align: center;
+}
+
+.alert-fpo-btn {
+  width: 100%;
+  padding: 17px;
+  background: linear-gradient(135deg, #2d6a2d, #1e4d1e);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.18s;
+  box-shadow: 0 4px 16px rgba(45,106,45,0.3);
+}
+
+.alert-fpo-btn--done {
+  background: linear-gradient(135deg, #1e4d1e, #163a16);
+}
+
+.alert-fpo-btn:active { transform: scale(0.98); }
+
+.backtest-note {
+  font-size: 12px;
+  color: #9a9080;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #8a8070;
+  margin: 16px 0 10px;
+  text-transform: uppercase;
+}

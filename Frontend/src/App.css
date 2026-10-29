@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #e8e4dc;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#root {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100dvh;
+  position: relative;
+}
+
+.app-shell {
+  width: 100%;
+  min-height: 100dvh;
+  position: relative;
+}
+
+.app-content {
+  width: 100%;
+  min-height: 100dvh;
+}
+
+.screen {
+  background: #f5f3ee;
+  min-height: 100dvh;
+  overflow-y: auto;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c8c0b8; border-radius: 2px; }
+
+/* Typography helpers */
+h1, h2, h3 {
+  font-family: 'Outfit', sans-serif;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth transitions */
+.screen {
+  animation: fadeIn 0.18s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
